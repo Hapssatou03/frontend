@@ -1,0 +1,214 @@
+
+.container {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  color:  #f4be7e;
+  position: relative;
+  
+  
+}
+
+.header {
+  width: 100%;
+  /* Ajusté pour ne pas dépasser les limites du conteneur */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 20px;
+ margin-left:28%;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+}
+
+.welcome {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.userButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.publication {
+  margin-bottom: 20px;
+}
+
+.commentTextarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.commentActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.createButton{
+  background-color: #f4be7e;
+    color: black;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 27em;
+}
+.actionButton {
+  background-color: #f4be7e;
+  color: black;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+/* .actionButton:hover {
+  background-color: #0056b3;
+} */
+
+.articleBox {
+  background-color: white;
+  color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+ text-align: justify;
+  width: 80%;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.articleActions {
+  margin-top:15px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftActions {
+  display: flex;
+  gap: 10px;
+  /* Espacement entre like et dislike */
+}
+
+.rightActions {
+  display: flex;
+  gap: 10px;
+  /* Espacement entre edit et delete */
+}
+
+.commentSection {
+  margin-top: 15px;
+}
+
+.comment {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.comment textarea {
+  margin-top: 10px;
+  padding: 5px;
+ 
+}
+
+.modeSwitch {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+  
+}
+
+
+
+/* Applique le mode sombre au conteneur principal */
+.container.dark {
+  background-color: rgba(33, 33, 33, .9);
+  color: #ffffff;
+}
+
+/* Modifie les autres éléments dans le mode sombre */
+
+.container.dark .articleBox,
+.container.dark .commentTextarea,
+.container.dark .footer {
+  background-color: rgba(33, 33, 33, .9);;
+  color: #ffffff;
+}
+
+.container.dark, 
+ /* .userButton,  */
+ .modeSwitch{color: #ffffff;}
+
+/* .container.dark  */
+.container.dark .actionButton {
+  background-color: rgba(33, 33, 33, .9);;
+  color: #f4be7e;
+}
+
+/* Pour les boutons d'action */
+.container.dark .actionButton:hover {
+  background-color:rgba(33, 33, 33, .9);;
+}
+
+/* Modifie la couleur de fond pour l'input de fichier dans le mode sombre */
+.container.dark input[type="file"] {
+  background-color: #333;
+  color: #fff;
+}
+
+/* .modeSwitch:hover {
+  color: #f4be7e;
+} */
+.logoutButton {
+  background: none;
+  border: none;
+  color: #ff5a5a;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.logoutButton:hover {
+  color: #ff0000;
+}
+
+.articleImage {
+   max-width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: auto;
+   margin-bottom: 10px;
+   border-radius: 5px;
+}
+
+.footer {
+  background-color: #333;
+  color: #f4be7e;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
